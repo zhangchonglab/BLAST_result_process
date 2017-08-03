@@ -1,5 +1,14 @@
 # this script is used to extract the desired hits from a blast result based on several thresholds:
 # identity, coverage for query, coverage for hit;
+# utility: python blast_filter.py query db blast_result
+# db: query fasta file used in the abovementioned BLAST search
+# db: databse fasta file used in the abovementioned BLAST search
+# blast_result output file of BLAST+ package (BLASTP, BLASTN, etc) in outfmt6 format
+
+# The program will ask the user to type in the thresholds (identity, coverage for query, coverage for hit) used for hit extraction. 
+# After run the script, you can see tips for typing in, just follow it, please.
+# e.g. "Whether you would like to use identity as threshold (yes or no):"
+# "Type in the cutoff for identity (0.0-1.0 real number):"
 
 # first of all get the query and database fastafile, respectively
 import os
@@ -93,11 +102,3 @@ for line in f:
         g.write(line)
 f.close()
 g.close()
-
-
-
-
-
-
-
-# trim the result and 
