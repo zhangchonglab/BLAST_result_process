@@ -1,5 +1,6 @@
-# this script is used to extract only the best hit or several best hits for a particular query after outfmt -6 blast
-# input: the raw outfmt 6 blast result
+# this script is used to extract only the best hit or several best hits (accoding to identity) for a particular query after outfmt -6 blast
+# utility: python get_best_hit.py blast_result
+# blast_result output file of BLAST+ package (BLASTP, BLASTN, etc) in outfmt6 format.
 
 import os
 import sys
