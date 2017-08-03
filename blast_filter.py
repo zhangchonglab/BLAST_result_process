@@ -1,7 +1,7 @@
 # this script is used to extract the desired hits from a blast result based on several thresholds:
 # identity, coverage for query, coverage for hit;
 # utility: python blast_filter.py query db blast_result
-# db: query fasta file used in the abovementioned BLAST search
+# query: query fasta file used in the abovementioned BLAST search
 # db: databse fasta file used in the abovementioned BLAST search
 # blast_result output file of BLAST+ package (BLASTP, BLASTN, etc) in outfmt6 format
 
